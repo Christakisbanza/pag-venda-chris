@@ -1,0 +1,110 @@
+
+/* =================================
+  1. RESET GLOBAL
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =================================
+  2. CONFIGURAÇÕES DO HTML E BODY
+================================= */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =================================
+  3. VARIÁVEIS GLOBAIS
+================================= */
+
+:root {
+  /* Cores */
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --background-color: #ffffff;
+  --text-color: #222222;
+  --text-light: #666666;
+
+  /* Fontes */
+  --font-primary: 'Inter', sans-serif;
+
+  /* Tamanhos */
+  --container-width: 1200px;
+
+  /* Bordas */
+  --border-radius: 10px;
+
+  /* Sombras */
+  --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* =================================
+  4. ELEMENTOS GERAIS
+================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* =================================
+  5. CONTAINER PADRÃO
+================================= */
+
+.container {
+  width: min(100% - 40px, var(--container-width));
+  margin-inline: auto;
+}
+
+/* =================================
+  6. RESPONSIVIDADE
+================================= */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    width: min(100% - 30px, var(--container-width));
+  }
+}
