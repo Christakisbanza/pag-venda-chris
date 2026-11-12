@@ -11,17 +11,16 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  scroll-padding-top: 100px;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
-  background: var(--dark-bg);
+  background-color: var(--dark-bg);
   color: var(--text-light);
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* =========================
@@ -71,13 +70,7 @@ body {
   --transition: 0.3s ease;
 }
 
-/* =========================
-    ELEMENTOS GERAIS
-========================= */
 
-h1, h2, h3, h4 {
-  font-family: var(--font-title);
-}
 
 a {
   text-decoration: none;
@@ -96,50 +89,17 @@ img {
   max-width: 100%;
   display: block;
 }
-
-/* =========================
-    CONTAINERS E SEÇÕES
-========================= */
-
 .container {
-  width: min(100% - 40px, var(--container-width));
-  margin-inline: auto;
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 25px;
 }
 
-.section-dark {
-  background: var(--dark-bg);
-  color: var(--text-light);
+section {
+  scroll-margin-top: 100px;
 }
 
-.section-light {
-  background: var(--light-bg);
-  color: var(--text-dark);
-}
 
-/* =========================
-    BOTÃO PRINCIPAL
-========================= */
 
-.btn-primary {
-  background: var(--gradient-purple);
-  color: var(--white);
-  padding: 14px 24px;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  transition: var(--transition);
-}
 
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-purple);
-}
-
-/* =========================
-    RESPONSIVIDADE
-========================= */
-
-@media (max-width: 768px) {
-  .container {
-    width: min(100% - 30px, var(--container-width));
-  }
-}
