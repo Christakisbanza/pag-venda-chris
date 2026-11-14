@@ -11,7 +11,7 @@ import {
 
 import "./Hero.css";
 
-const whatsappNumber = "5541999999999"; // Substitua pelo seu número
+const whatsappNumber = "5541995407966"; // Substitua pelo seu número
 
 const message = encodeURIComponent(
     "Olá! Vim pelo site da Chris<Tech>.is e gostaria de conhecer seus serviços."
